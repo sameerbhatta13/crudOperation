@@ -6,7 +6,7 @@ const Dashboard = () => {
     return (
         <>
             <div className='min-h-screen'>
-                <div className='grid grid-cols-2 md:grid-cols-4 items-center justify-center p-5 m-20 gap-5'>
+                <div className='grid grid-cols-2 md:grid-cols-4 items-center justify-center p-2  md:p-5 m-10 md:m-20 gap-5'>
                     <div className='border-2 p-4'>
                         <NavLink to='userlist' className={({ isActive }) =>
                             `${isActive ? 'underline underline-offset-4 font-bold text-xl' : ''}`
@@ -27,7 +27,7 @@ const Dashboard = () => {
                     </div>
                     <div className='border-2 p-4'>
                         <NavLink to='interviewerlist' className={({ isActive }) =>
-                            `${isActive ? 'underline underline-offset-4 font-bold text-xl' : ''}`
+                            `${isActive ? 'underline underline-offset-4 font-bold text-xl ' : ''}`
                         }>Interviewer List</NavLink>
                     </div>
 

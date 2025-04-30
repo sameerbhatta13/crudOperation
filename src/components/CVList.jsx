@@ -90,7 +90,7 @@ const CVList = () => {
             <div className='flex justify-end mx-25'>
                 <Button className='border rounded-lg p-2 gap-2 shadow-[-7px_7px_0px_#000000] font-bold' onClick={() => setIsModalOpen(true)}>Add CV</Button>
             </div>
-            <div className='grid grid-cols-2 md:grid-cols-3 gap-5 p-5 mx-20 my-10'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-5 p-5 mx-20 my-10'>
                 {
                     cvlist?.vdata?.map((item, index) => {
                         return <div key={index} className=' flex flex-col justify-center items-center'>
@@ -107,7 +107,6 @@ const CVList = () => {
                     })
                 }
             </div>
-
 
             <Modal isOpen={isModalOpen} onRequestClose={() => setIsModalOpen(false)}
                 overlayClassName="fixed top-0 left-0 w-full bg-black/60 h-full"

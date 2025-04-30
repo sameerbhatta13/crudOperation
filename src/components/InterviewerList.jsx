@@ -57,11 +57,11 @@ const InterviewerList = () => {
     return (
         <>
 
-            <div className='flex justify-end mx-25'>
+            <div className='flex justify-end mr-12 md:mx-25'>
                 <button className='border rounded-lg p-2 gap-2 shadow-[-7px_7px_0px_#000000] font-bold' onClick={() => setIsModalOpen(true)}>Add Interviewer</button>
             </div>
             <div className="overflow-x-auto mt-6">
-                <table className="table-auto border-separate border-gray-400 min-w-7xl my-6 rounded-lg p-5 m-20">
+                <table className="table-auto border-separate border-gray-400 min-w-7xl my-6 rounded-lg p-5 mx-5 md:mx-20">
                     <thead>
                         <tr>
                             <th className="border border-gray-300 p-2">S.N</th>

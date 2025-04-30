@@ -26,7 +26,7 @@ const UserList = () => {
     }, [])
     return (
         <>
-            <div className='mx-24'>
+            <div className='mx-10 md:mx-24'>
                 <input type="search"
                     placeholder='search here .....'
                     className="w-full max-w-md p-2 border rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-400"
@@ -36,7 +36,7 @@ const UserList = () => {
             <div className="overflow-x-auto mt-6">
                 {
                     filterUserList?.length > 0 ? (
-                        <table className="table-auto border-separate border-gray-400 min-w-7xl my-6 rounded-lg p-5 mx-20">
+                        <table className="table-auto border-separate border-gray-400 min-w-7xl my-6 rounded-lg p-5 mx-5 md:mx-20">
                             <thead>
                                 <tr>
                                     <th className="border border-gray-300 p-2">S.N</th>
