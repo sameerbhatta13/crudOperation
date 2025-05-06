@@ -20,8 +20,6 @@ const CVList = () => {
         email: '',
         ref: '',
         image: null,
-
-
     })
     const handleChange = (e) => {
         const { name, value } = e.target
@@ -88,16 +86,16 @@ const CVList = () => {
     return (
         <>
             <div className='flex justify-end mx-25'>
-                <Button className='border rounded-lg p-2 gap-2 shadow-[-7px_7px_0px_#000000] font-bold' onClick={() => setIsModalOpen(true)}>Add CV</Button>
+                <Button variant='default' className='border rounded-lg p-2 gap-2 shadow-[-7px_7px_0px_#000000] bg-green-600 font-bold' onClick={() => setIsModalOpen(true)}>Add CV</Button>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-5 p-5 mx-20 my-10'>
                 {
                     cvlist?.vdata?.map((item, index) => {
-                        return <div key={index} className=' flex flex-col justify-center items-center'>
+                        return <div key={index} className='flex flex-col justify-center items-center'>
                             {item?.image === 'null' ? (
                                 <img src={`${APP_URL}/${item.image} `} alt="" />
                             ) : (
-                                <RxAvatar size={50} className='my-7 ' />
+                                <RxAvatar size={50} className='my-7' />
                             )}
 
                             <h1 className='text-2xl text-neutral-600'>{item.name}</h1>
